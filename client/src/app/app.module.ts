@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './component/navigation/navigation.component';
+import { DevicesComponent } from './component/devices/devices.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent
+    NavigationComponent,
+    DevicesComponent
   ],
   imports: [
     BrowserModule
