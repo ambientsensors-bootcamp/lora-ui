@@ -1,20 +1,29 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
+<md-toolbar>
+  <span style="color:white;font-weight:bold">
+    
     Welcome to {{title}}!
-  </h1>
-  <img width="300" src="https://www.thethingsindustries.com/static/main/images/LoRa.2cb9d981f848.png">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a href="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwiF1b7Z3o7VAhUU32MKHTtPCT0QjBwIBA&url=https%3A%2F%2Fstatic.wixstatic.com%2Fmedia%2Feccc1a_4d9004b5edc14abd950e136589aac2e7~mv2.jpg_srz_1200_626_85_22_0.50_1.20_0.00_jpg_srz&psig=AFQjCNGrUvojMIA8r_bb3IkW3amL-ycg4A&ust=1500326706458452">Check Out Our Alliance Here!</a></h2>
-  </li>
-</ul>
+  </span> 
+
+
+
+ <button md-button [mdMenuTriggerFor]="conMenu">Connections</button>
+  <md-menu #conMenu="mdMenu">
+    <button md-menu-item routerLink="connections">Type</button>
+    <button md-menu-item routerLink="connections">Statistics</button>
+  </md-menu>
+
+  <button md-button [mdMenuTriggerFor]="devMenu">Devices</button>
+  <md-menu #devMenu="mdMenu">
+    <button md-menu-item routerLink="devices">Type</button>
+    <button md-menu-item routerLink="devices">Statistics</button>
+  </md-menu>
+</md-toolbar>
+
+<router-outlet></router-outlet>
+ <!--y<img align="right" width="300" src="https://www.thethingsindustries.com/static/main/images/LoRa.2cb9d981f848.png">
+
+<img align="right" src=".\images\LoRaSigFox-logoscrop.jpg">-->
+<img align="right" src="http://3.bp.blogspot.com/-D_OYbtoJ1Mo/VkJShtmxjtI/AAAAAAAAAg8/fT9PoR_lurA/s1600/Lora-logo.jpg">
+
 
