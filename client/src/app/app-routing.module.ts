@@ -7,8 +7,8 @@ const routes: Routes =
     [
      
         { path: 'about', component: AboutComponent},
-        { path: '', pathMatch: 'full', redirectTo: 'database' },
-        { path: '**', pathMatch: 'full', redirectTo: 'database' }
+        { path: '', pathMatch: 'full', redirectTo: 'about' },
+        { path: '**', pathMatch: 'full', redirectTo: 'about' }
     ];
 
 
