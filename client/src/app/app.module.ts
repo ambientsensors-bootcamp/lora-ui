@@ -8,12 +8,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { CollectionsComponent } from './components/collections/collections.component';
 import { HttpModule } from '@angular/http';
 import { ChartsModule } from 'ng2-charts';
+import { BarChartComponent } from './components/bar-chart/bar-chart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
-    CollectionsComponent
+    CollectionsComponent,
+    BarChartComponent
   ],
   imports: [
     BrowserModule,
