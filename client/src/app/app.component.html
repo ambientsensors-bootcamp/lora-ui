@@ -1,16 +1,23 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
- 
- <img width="300" src="https://www.thaumatec.com/user/pages/05.use-cases/04.Smart-City-Wroc%C5%82aw/_06_technical/lora.jpg">
-</div>
 
- <h1>
+  <img width="300" src="https://www.thaumatec.com/user/pages/05.use-cases/04.Smart-City-Wroc%C5%82aw/_06_technical/lora.jpg">
+  
+  <h1>
     Welcome to {{title}}!
   </h1>
 
-   <router-outlet></router-outlet>
+</div>
 
+<md-toolbar>
 
+  <button md-button [mdMenuTriggerFor]="about">About</button>
+  <button md-button [mdMenuTriggerFor]="colMenu">Collections</button>
+  <button md-button routerLink="dbMenu">Databases</button>
+  <button md-button> Contact Us </button>
 
+</md-toolbar>
 
+<md-card>{{collections}}</md-card>
 
+<router-outlet></router-outlet>
