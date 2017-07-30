@@ -9,13 +9,15 @@ import { CollectionsComponent } from './components/collections/collections.compo
 import { HttpModule } from '@angular/http';
 import { ChartsModule } from 'ng2-charts';
 import { BarChartComponent } from './components/bar-chart/bar-chart.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     CollectionsComponent,
-    BarChartComponent
+    BarChartComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
