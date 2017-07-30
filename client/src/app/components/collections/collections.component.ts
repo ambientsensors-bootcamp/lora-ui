@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { WebServiceClient } from '../../Services/webServerClient';
+import { WebServiceClient } from '../../services/webServerClient';
 
 @Component({
   selector: 'app-collections',

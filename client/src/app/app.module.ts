@@ -4,8 +4,9 @@ import { WebServiceClient } from './services/webServerClient';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
 import { MaterialModule } from '@angular/material';
-import {AppRoutingModule} from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { CollectionsComponent } from './components/collections/collections.component';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { CollectionsComponent } from './components/collections/collections.compo
   imports: [
     BrowserModule,
     MaterialModule,
+    HttpModule,
     AppRoutingModule
   ],
   providers: [WebServiceClient],
