@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build -prod --aot=false"
+    "postinstall": "ng build -prod --aot=false",
+    "deploy": "git push heroku master"
   },
   "private": true,
   "dependencies": {
