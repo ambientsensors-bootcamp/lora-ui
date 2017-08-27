@@ -1,0 +1,50 @@
+[
+  {
+    "Name": "Ann Morrison Park Sensor",
+    "Readings": {
+      "TemperatureUOM": "f",
+      "Temperature": 70,
+      "Humidity": 50
+    },
+    "Timestamp": {
+      "IngestionTime": "2017-06-29T18:24:10.000Z"
+    },
+    "Location": {
+      "Latitude": 43.6187,
+      "Longitude": 116.2146
+    },
+    "Id": "dfe3-thf5-232s-dse4"
+  }
+  ,{
+    "Name": "Ann Morrison Park Sensor",
+    "Readings": {
+      "TemperatureUOM": "f",
+      "Temperature": 70,
+      "Humidity": 51
+    },
+    "Timestamp": {
+      "IngestionTime": "2017-06-29T18:24:10.500Z"
+    },
+    "Location": {
+      "Latitude": 43.6187,
+      "Longitude": 116.2146
+    },
+    "Id": "dfe3-thf5-232s-dse5"
+  }
+  ,{
+    "Name": "Ann Morrison Park Sensor",
+    "Readings": {
+      "TemperatureUOM": "f",
+      "Temperature": 69,
+      "Humidity": 51
+    },
+    "Timestamp": {
+      "IngestionTime": "2017-06-29T18:24:11.000Z"
+    },
+    "Location": {
+      "Latitude": 43.6187,
+      "Longitude": 116.2146
+    },
+    "Id": "dfe3-thf5-232s-dse6"
+  }
+]

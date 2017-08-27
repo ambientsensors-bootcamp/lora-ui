@@ -13,8 +13,8 @@ export class CollectionsComponent {
   constructor( private ws: WebServiceClient) { }
 
   // Doughnut
-  public doughnutChartLabels:string[] = ['Downloads', 'Data', 'Services'];
-  public doughnutChartData:number[] = [350, 450, 100];
+  public doughnutChartLabels:string[] = ['Downloads', 'Data', 'Services', 'Bigger Number'];
+  public doughnutChartData:number[] = [350, 450, 100, 700];
   public doughnutChartType:string = 'doughnut';
  
   // events
