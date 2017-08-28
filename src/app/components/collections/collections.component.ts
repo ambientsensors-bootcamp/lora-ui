@@ -26,4 +26,10 @@ export class CollectionsComponent {
     console.log(e);
   }
 
+  
+
+  public toJSObject(data: string) {
+    return JSON.parse(data);
+  }
+
 }
