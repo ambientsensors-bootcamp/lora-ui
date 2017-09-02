@@ -13,10 +13,10 @@ export class AboutComponent implements OnInit {
   constructor(private ws: WebServiceClient) { }
 
   ngOnInit() {
-    this.ws.getResource("find").subscribe(data => {
-      this.loracollection = data;
-      console.log("data", data, "loracollection", this.loracollection);
-    });
+    // this.ws.getResource("find").subscribe(data => {
+    //   this.loracollection = data;
+    //   console.log("data", data, "loracollection", this.loracollection);
+    // });
   }
 
 }
