@@ -18,6 +18,9 @@ export class CollectionsComponent {
   // Doughnut
   public doughnutChartLabels:string[] = ['Downloads', 'Data', 'Services', 'Bigger Number'];
   public doughnutChartData:number[] = [350, 450, 100, 700];
+  
+  
+  
   public doughnutChartType:string = 'doughnut';
  
   // events
@@ -36,28 +39,32 @@ export class CollectionsComponent {
     return JSON.parse(data);
   }
 
-  // public temperatureData = this.ws.getAssetResource('../../../assets/deviceTelemetry.json');
+  public temperatureData = this.ws.getAssetResource('../../../assets/deviceTelemetry.json');
+  // temperatureData = JSON.parse(this.temperatureData);
+
+  // for (i = 0; i < temperatureData.length; i++) {
+  //   public doughnutChartData:number[i] = temperatureData[i].Readings.Temperature;
+  // }
 
   // public temperatureData = this.toJSObject('');
 
   // public temperatureData = JSON.parse()
 
-//   public readTextFile(file, callback) {
-//     var rawFile = new XMLHttpRequest();
-//     rawFile.overrideMimeType("application/json");
-//     rawFile.open("GET", file, true);
-//     rawFile.onreadystatechange = function() {
-//         if (rawFile.readyState === 4 && rawFile.status == "200") {
-//             callback(rawFile.responseText);
-//         }
-//     }
-//     rawFile.send(null);
-// }
+  // function readTextFile(file, callback) {
+  //   var rawFile = new XMLHttpRequest();
+  //   rawFile.overrideMimeType("application/json");
+  //   rawFile.open("GET", file, true);
+  //   rawFile.onreadystatechange = function() {
+  //       if (rawFile.readyState === 4 && rawFile.status == "200") {
+  //           callback(rawFile.responseText);
+  //       }
+  //   }
+  //   rawFile.send(null);
 
-// //usage:
-// readTextFile('./deviceTelemetry.json', function(text){
-//     var data = JSON.parse(text);
-//     console.log(data);
-// });
+  //   //usage:
+  //   readTextFile('../../../assets/deviceTelemetry.json', function(text){
+  //     var data = JSON.parse(text);
+  //     console.log(data);
+  //   });
 
 }
