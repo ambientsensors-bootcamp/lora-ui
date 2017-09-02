@@ -19,6 +19,13 @@ export class WebServiceClient {
         return this.getResponseBody(response);
     }
 
+    public getAssetResource(resource: string): Observable<any> {
+        console.log("GET request to full path: ");
+        const response = this.http.get(resource);
+        return this.getResponseBody(response);
+    }
+
+
     private getResponseBody(obs: Observable<Response>): Observable<any> {
         let self = this;
         let response = obs

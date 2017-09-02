@@ -10,7 +10,10 @@ export class CollectionsComponent {
 
   collections: any= []
 
-  constructor( private ws: WebServiceClient) { }
+  constructor( private ws: WebServiceClient) {
+    this.ws.getAssetResource('../../../assets/deviceTelemetry.json')
+      .subscribe(data=>console.log(data));
+   }
 
   // Doughnut
   public doughnutChartLabels:string[] = ['Downloads', 'Data', 'Services', 'Bigger Number'];
@@ -33,7 +36,9 @@ export class CollectionsComponent {
     return JSON.parse(data);
   }
 
-  public temperatureData = this.toJSObject('./deviceTelemetry.json');
+  // public temperatureData = this.ws.getAssetResource('../../../assets/deviceTelemetry.json');
+
+  // public temperatureData = this.toJSObject('');
 
   // public temperatureData = JSON.parse()
 
