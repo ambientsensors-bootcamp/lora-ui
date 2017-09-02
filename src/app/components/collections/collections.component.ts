@@ -26,12 +26,33 @@ export class CollectionsComponent {
     console.log(e);
   }
 
-  // public dataThing: string = './deviceTelemetry.json';
+  public dataThing: string = './deviceTelemetry.json';
+  
 
   public toJSObject(data: string) {
     return JSON.parse(data);
   }
 
   public temperatureData = this.toJSObject('./deviceTelemetry.json');
+
+  // public temperatureData = JSON.parse()
+
+//   public readTextFile(file, callback) {
+//     var rawFile = new XMLHttpRequest();
+//     rawFile.overrideMimeType("application/json");
+//     rawFile.open("GET", file, true);
+//     rawFile.onreadystatechange = function() {
+//         if (rawFile.readyState === 4 && rawFile.status == "200") {
+//             callback(rawFile.responseText);
+//         }
+//     }
+//     rawFile.send(null);
+// }
+
+// //usage:
+// readTextFile('./deviceTelemetry.json', function(text){
+//     var data = JSON.parse(text);
+//     console.log(data);
+// });
 
 }
