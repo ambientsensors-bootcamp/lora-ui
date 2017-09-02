@@ -26,10 +26,12 @@ export class CollectionsComponent {
     console.log(e);
   }
 
-  
+  // public dataThing: string = './deviceTelemetry.json';
 
   public toJSObject(data: string) {
     return JSON.parse(data);
   }
+
+  public temperatureData = this.toJSObject('./deviceTelemetry.json');
 
 }
