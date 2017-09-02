@@ -11,8 +11,18 @@ export class CollectionsComponent {
   collections: any = []
   temperatureData: any = [];
   doughnutChartData: number[] = [];
-  doughnutChartLabels: string[] = ['e1'];
+  doughnutChartLabels: string[] = [];
   doughnutChartType: string = 'doughnut';
+  locationName: string[] = [];
+  temperatureUOM: string[] = [];
+  temperatureLevel: number[] = [];
+  humidityLevel: number[] = [];
+  ingestionTime: string[] = [];
+  locationLong: number[] = [];
+  locationLat: number[] = [];
+  locationLongLat: object[] = [];
+  deviceId: string[] = [];
+
   hasData = false;
 
   constructor( private ws: WebServiceClient) {

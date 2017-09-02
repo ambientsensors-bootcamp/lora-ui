@@ -47,4 +47,20 @@
     },
     "Id": "dfe3-thf5-232s-dse6"
   }
+    ,{
+    "Name": "Julia Davis Park Sensor",
+    "Readings": {
+      "TemperatureUOM": "f",
+      "Temperature": 68,
+      "Humidity": 53
+    },
+    "Timestamp": {
+      "IngestionTime": "2017-06-29T18:26:19.000Z"
+    },
+    "Location": {
+      "Latitude": 43.7843,
+      "Longitude": 120.2146
+    },
+    "Id": "dfe3-thf5-232s-dse7"
+  }
 ]
