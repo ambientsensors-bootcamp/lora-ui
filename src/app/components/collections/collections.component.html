@@ -1,8 +1,11 @@
-<md-card class="smaller"> 
-  <canvas baseChart
+<md-card class="smaller">
+  <div *ngIf="hasData">
+    <canvas baseChart
               [data]="doughnutChartData"
               [labels]="doughnutChartLabels"
               [chartType]="doughnutChartType"
               (chartHover)="chartHovered($event)"
-              (chartClick)="chartClicked($event)"></canvas>
+              (chartClick)="chartClicked($event)">
+    </canvas>
+  </div>
 </md-card>
