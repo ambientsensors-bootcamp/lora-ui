@@ -1,0 +1,23 @@
+<!-- <md-card class="smaller"> -->
+  <div *ngIf="hasData">
+    <!-- <canvas baseChart
+              [data]="doughnutChartData"
+              [labels]="doughnutChartLabels"
+              [chartType]="doughnutChartType"
+              (chartHover)="chartHovered($event)"
+              (chartClick)="chartClicked($event)">
+    </canvas> -->
+    <canvas deviceLocationMap
+        [latitude]="lat" 
+        [longitude]="lng">
+        <h1>Telemetry Map</h1>
+
+        <!-- this creates a google map on the page with the given lat/lng from -->
+        <!-- the component as the initial center of the map: -->
+        <agm-map [latitude]="lat" [longitude]="lng">
+            <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
+    </canvas>
+  </div>
+<!-- </md-card> -->
+
