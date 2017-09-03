@@ -3,8 +3,8 @@ import { WebServiceClient } from '../../services/webServerClient';
 
 @Component({
   selector: 'app-device-location-map',
-  templateUrl: './device-location-map.component.html',
-  styleUrls: ['./device-location-map.component.css']
+  templateUrl: '../device-location-map.component.html',
+  styleUrls: ['../device-location-map.component.css']
 })
 export class DeviceLocationMapComponent {
     lat: number = 51.678418;
