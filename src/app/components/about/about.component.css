@@ -1,0 +1,15 @@
+.example-card {
+    width: 900px;
+    
+  }
+  
+  .example-header-image {
+    background-image: url('Lora.png'); 
+    background-size: cover;
+    size: 500px;
+    
+  }
+
+  .md-card-header{
+      size: 300px;
+  }
