@@ -6,10 +6,18 @@
   .example-header-image {
     background-image: url('Lora.png'); 
     background-size: cover;
-    size: 500px;
-    
   }
 
-  .md-card-header{
-      size: 300px;
+  .md-card-avatar{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        flex-shrink: 0;
   }
+  div {
+    display: block;
+}
+
+div[_ngcontent-c3] {
+    display: block;
+}
