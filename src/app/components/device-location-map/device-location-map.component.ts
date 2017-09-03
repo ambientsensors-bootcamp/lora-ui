@@ -16,7 +16,7 @@ export class DeviceLocationMapComponent {
     collections: any = []
     temperatureData: any = [];
     locationName: string[] = [];
-    temperatureUOM: string[] = [];
+    temperatureUOM: string[] = [];          // eg. "f" stands for farenheit
     temperatureLevel: number[] = [];
     humidityLevel: number[] = [];
     ingestionTime: string[] = [];
@@ -33,8 +33,12 @@ export class DeviceLocationMapComponent {
             this.temperatureData = data;
             for (let i = 0; i < this.temperatureData.length; i++) {
                 if (!isNaN(this.temperatureData[i].Location.Longitude) && !isNaN(this.temperatureData[i].Location.Latitude)) {
-                    this.locationLng[i] = this.temperatureData[i].Location.Longitude;
-                    this.locationLat[i] = this.temperatureData[i].Location.Latitude;
+                    this.temperatureUOM[i] = this.temperatureData[i].Location.temperatureUOM;
+
+                    // if (this.temperatureUOM[i] == "f") { // at some point we should check what the units of measure are
+                        this.locationLng[i] = this.temperatureData[i].Location.Longitude;
+                        this.locationLat[i] = this.temperatureData[i].Location.Latitude;
+                    // }
                 }
             }
             this.hasData = true;
