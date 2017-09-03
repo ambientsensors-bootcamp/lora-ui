@@ -10,6 +10,7 @@ import { WebServiceClient } from '../../services/webServerClient';
 export class DeviceLocationMapComponent {
     // this is the center of the map
     // ideally, we'd figure out the center based on the data received in deviceTelemetry
+    zoom: number = 15;
     lat: number = 43.610245;
     lng: number = -116.218883;
 
@@ -45,7 +46,8 @@ export class DeviceLocationMapComponent {
         });
     }
 
- 
+
+
     events
     public chartClicked(e:any):void {
         console.log(e);
@@ -56,3 +58,4 @@ export class DeviceLocationMapComponent {
     }
  
 }
+
