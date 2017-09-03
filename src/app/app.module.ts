@@ -10,9 +10,9 @@ import { HttpModule } from '@angular/http';
 import { ChartsModule } from 'ng2-charts';
 import { BarChartComponent } from './components/bar-chart/bar-chart.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { DeviceLocationMapComponent } from './components/device-location-map/device-location-map.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
 import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
@@ -21,6 +21,7 @@ import { AgmCoreModule } from '@agm/core';
     AboutComponent,
     CollectionsComponent,
     BarChartComponent,
+    DeviceLocationMapComponent,
     ContactUsComponent
   ],
   imports: [
