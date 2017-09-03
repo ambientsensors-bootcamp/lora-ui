@@ -8,14 +8,13 @@ import { WebServiceClient } from '../../services/webServerClient';
     styleUrls: ['./device-location-map.component.css']
 })
 export class DeviceLocationMapComponent {
-    lat: number = 51.678418;
-    lng: number = 7.809007;
+    // this is the center of the map
+    // ideally, we'd figure out the center based on the data received in deviceTelemetry
+    lat: number = 43.610245;
+    lng: number = -116.218883;
 
     collections: any = []
     temperatureData: any = [];
-//   doughnutChartData: number[] = [];
-//   doughnutChartLabels: string[] = [];
-//   doughnutChartType: string = 'doughnut';
     locationName: string[] = [];
     temperatureUOM: string[] = [];
     temperatureLevel: number[] = [];
@@ -33,26 +32,23 @@ export class DeviceLocationMapComponent {
             .subscribe(data => {
             this.temperatureData = data;
             for (let i = 0; i < this.temperatureData.length; i++) {
-                if (isNaN(this.temperatureData[i].Longitude) && isNaN(this.temperatureData[i].Latitude)) {
-                    this.locationLng[i] = this.temperatureData[i].Longitude;
-                    this.locationLat[i] = this.temperatureData[i].Latitude;
+                if (!isNaN(this.temperatureData[i].Location.Longitude) && !isNaN(this.temperatureData[i].Location.Latitude)) {
+                    this.locationLng[i] = this.temperatureData[i].Location.Longitude;
+                    this.locationLat[i] = this.temperatureData[i].Location.Latitude;
                 }
             }
             this.hasData = true;
-
-            console.log(this.locationLng);
         });
     }
 
-   
  
-  events
-  public chartClicked(e:any):void {
-    console.log(e);
-  }
+    events
+    public chartClicked(e:any):void {
+        console.log(e);
+    }
  
-  public chartHovered(e:any):void {
-    console.log(e);
-  }
+    public chartHovered(e:any):void {
+        console.log(e);
+    }
  
 }

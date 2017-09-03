@@ -1,6 +1,6 @@
 [
   {
-    "Name": "Ann Morrison Park Sensor",
+    "Name": "Ann Morrison Park Sensor 1",
     "Readings": {
       "TemperatureUOM": "f",
       "Temperature": 70,
@@ -10,13 +10,13 @@
       "IngestionTime": "2017-06-29T18:24:10.000Z"
     },
     "Location": {
-      "Latitude": 43.6187,
-      "Longitude": 116.2146
+      "Latitude": 43.614598,
+      "Longitude": -116.223786
     },
     "Id": "dfe3-thf5-232s-dse4"
   }
   ,{
-    "Name": "Ann Morrison Park Sensor",
+    "Name": "Ann Morrison Park Sensor 2",
     "Readings": {
       "TemperatureUOM": "f",
       "Temperature": 70,
@@ -26,13 +26,14 @@
       "IngestionTime": "2017-06-29T18:24:10.500Z"
     },
     "Location": {
-      "Latitude": 43.6187,
-      "Longitude": 116.2146
+      "Latitude": 43.610245,
+      "Longitude":  -116.218883
+
     },
     "Id": "dfe3-thf5-232s-dse5"
   }
   ,{
-    "Name": "Ann Morrison Park Sensor",
+    "Name": "Ann Morrison Park Sensor 3",
     "Readings": {
       "TemperatureUOM": "f",
       "Temperature": 69,
@@ -42,8 +43,8 @@
       "IngestionTime": "2017-06-29T18:24:11.000Z"
     },
     "Location": {
-      "Latitude": 43.6187,
-      "Longitude": 116.2146
+      "Latitude": 43.608244,
+      "Longitude": -116.220347
     },
     "Id": "dfe3-thf5-232s-dse6"
   }
@@ -58,8 +59,8 @@
       "IngestionTime": "2017-06-29T18:26:19.000Z"
     },
     "Location": {
-      "Latitude": 43.7843,
-      "Longitude": 120.2146
+      "Latitude": 43.60687,
+      "Longitude": -116.201105
     },
     "Id": "dfe3-thf5-232s-dse7"
   }
