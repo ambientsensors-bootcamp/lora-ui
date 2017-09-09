@@ -14,6 +14,7 @@ import { DeviceLocationMapComponent } from './components/device-location-map/dev
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { AgmCoreModule } from '@agm/core';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AgmCoreModule } from '@agm/core';
     CollectionsComponent,
     BarChartComponent,
     DeviceLocationMapComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
