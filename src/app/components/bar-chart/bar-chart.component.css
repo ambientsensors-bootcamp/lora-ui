@@ -1,4 +1,11 @@
+body{
+   padding-left: 300px;
+   padding-top: 100px;
+   position: absolute;
+
+}
 .smaller{
     height: 600px;
     width: 600px;
+ 
 }
