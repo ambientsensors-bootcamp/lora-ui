@@ -10,13 +10,13 @@ export class BarChartComponent {
     scaleShowVerticalLines: false,
     responsive: true
   };
-  public barChartLabels:string[] = ['Ann Morisson Park 1', 'Ann Morisson Parkv 2', "Ann Morisson Park 3","Julia Davis Park"];
+  public barChartLabels:string[] = ['Ann Morisson Park 1', 'Ann Morisson Park 2', "Ann Morisson Park 3","Julia Davis Park"];
   public barChartType:string = 'bar';
   public barChartLegend:boolean = true;
  
   public barChartData:any[] = [
-    {data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A'},
-    {data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B'}
+    {data: [65, 59, 80, 81, 56, 55, 40], label: 'Temperature'},
+    {data: [28, 48, 40, 19, 86, 27, 90], label: 'Humidity'}
   ];
  
   // events
