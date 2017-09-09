@@ -1,19 +1,44 @@
  <md-card class="smaller"> 
+
+    <!-- <link rel="stylesheet" href="snazzy-info-window.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key={{AIzaSyDWqKIr-8WtSANBUEwtAcJIC66n9Qg7OG8}}"></script>
+    <script src="snazzy-info-window.min.js"></script> -->
+
    <div *ngIf="hasData"> 
         <h1>Telemetry Map</h1>
 
     <!-- this creates a google map on the page with the given lat/lng from -->
     <!-- the component as the initial center of the map: -->
-        <agm-map [latitude]="lat" [longitude]="lng">
+        <agm-map 
+            [latitude]="lat" 
+            [longitude]="lng" 
+            [zoom]="zoom" 
+            (mapClick)="mapClicked($event)">
             <!-- <agm-marker [latitude]="locationLat[1]" [longitude]="locationLng[1]"></agm-marker>
             <agm-marker [latitude]="locationLat[2]" [longitude]="locationLng[2]"></agm-marker> -->
 
+
             <agm-marker *ngFor="let t of temperatureData; let i = index"
-                (markerClick)="clickedMarker(t.Name, i)"
+                (markerClick)="clickedMarker(t.Name, i, t.Readings.Temperature, t.Readings.TemperatureUOM, t.Readings.Humidity)"
                 [latitude]="t.Location.Latitude"
                 [longitude]="t.Location.Longitude"
                 [label]="t.Name"
-                (dragEnd)="markerDragEnd(t, $event)"></agm-marker>
+
+                (dragEnd)="markerDragEnd(t, $event)">
+
+                <!-- <google-map-info-window>
+                    <strong>Some thing from the InfoWindow</strong>
+                </google-map-info-window> -->
+
+                <div class='agm-info-window-content'
+                    (markerClick)="clickedMarker(t.Name, i, t.Readings.Temperature, 
+                        t.Readings.TemperatureUOM, t.Readings.Humidity)">  
+                    <strong>Yo!</strong>
+                    <ng-content></ng-content>
+                </div>
+
+            </agm-marker>
+
         </agm-map>
 
    </div> 

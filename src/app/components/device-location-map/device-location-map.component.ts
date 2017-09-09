@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { WebServiceClient } from '../../services/webServerClient';
+// import { InfoWindowOptions } from 'google.maps.InfoWindowOptions';
 
 
 @Component({
@@ -44,8 +45,26 @@ export class DeviceLocationMapComponent {
             }
             this.hasData = true;
         });
+
+
+        // var infoWindow = new SnazzyInfoWindow({
+        //     marker: marker,
+        //     content: 'Snazzy!'
+        //  });
+    //     InfoWindowOptions infoOptions = new InfoWindowOptions();
     }
 
+
+
+
+
+    // InfoWindow(opts?:InfoWindowOptions) {
+
+    // }
+
+        // var infowindow = new google.maps.InfoWindow({
+        //     content: contentString
+        // });
 
 
     events
@@ -57,5 +76,19 @@ export class DeviceLocationMapComponent {
         console.log(e);
     }
  
+    clickedMarker(Name: string, index: number, Temperature: number, TemperatureUOM: string, Humidity: number) {
+        console.log(`clicked the temperatureData: ${Name || index}`)
+        alert("Location: " + Name 
+            + "\nTemperature: " + Temperature + " °" + TemperatureUOM.toUpperCase()
+            + "\nHumidity: " + Humidity
+        );
+    }
+
+    mapClicked($event: any) {
+        this.temperatureData.push({
+            lat: $event.coords.lat,
+            lng: $event.coords.lng
+        });
+    }
 }
 
