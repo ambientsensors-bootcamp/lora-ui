@@ -1,5 +1,5 @@
 <body>
-<md-card class="smalle
+<md-card class="smaller">
   
     <canvas baseChart
             [datasets]="barChartData"
@@ -8,7 +8,8 @@
             [legend]="barChartLegend"
             [chartType]="barChartType"
             (chartHover)="chartHovered($event)"
-            (chartClick)="chartClicked($event)"></canvas>
+            (chartClick)="chartClicked($event)">
+    </canvas>
 
   <button (click)="randomize()">Update</button>
 </md-card>
