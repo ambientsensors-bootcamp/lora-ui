@@ -1,11 +1,12 @@
 body{
    padding-left: 300px;
-   padding-top: 100px;
+   padding-top: 50px;
    position: absolute;
 
 }
 .smaller{
     height: 600px;
     width: 600px;
+    
  
 }
